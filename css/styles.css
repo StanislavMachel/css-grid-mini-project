@@ -184,6 +184,7 @@ Cards
 .card {
   border: 1px solid var(--darkGray);
   margin-bottom: 3rem;
+  transition: var(--mainTransition);
 }
 
 .card-info {
@@ -202,7 +203,7 @@ Cards
   color: var(--primaryColor);
 }
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
   .cards-center{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -214,4 +215,15 @@ Cards
   .cards-center{
     grid-template-columns: repeat(3, 1fr);
   }
+} */
+
+/* .card:hover{
+  transform: rotate(5deg) scale(1.1)
+} */
+
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  
 }
